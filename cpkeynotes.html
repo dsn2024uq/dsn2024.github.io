@@ -35,45 +35,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <!-- First Keynote -->
         <div class="w3-card-4">
             <header class="w3-container w3-padding w3-theme-d2">
-                <span class="title">Foundations of Transaction Fee Mechanism Design</span><br />
-                <span class="author"><a href="https://cylab.cmu.edu/directory/bios/shi-elaine.html" target="_blank">Elaine Shi</a></span>, 
-                <span class="affiliation">Carnegie Mellon University</span>
+                <span class="title">TBC</span><br />
+                <span class="author"><a href="https://researchers.anu.edu.au/researchers/teague-v" target="_blank">A/Prof. Vanessa Teague</a></span>, 
+                <span class="affiliation">Australian National University</span>
             </header>
             <div class="w3-container">
-                
+                <img src="./images/kn/Vanessa_Teague.png" alt="Vanessa_Teague" class="w3-left w3-margin-top w3-margin-right" style="width:15%">
                 <p align="justify">
-                Space in a blockchain is a scarce resource. Cryptocurrencies
-                today use auctions to decide which transactions get confirmed
-                in the block. Intriguingly, classical auctions fail in such a
-                decentralized environment, since even the auctioneer can be a
-                strategic player. For example, the second-price auction is a
-                golden standard in classical mechanism design. It fails,
-                however, in the blockchain environment since the miner can
-                easily inject a bid that is epsilon smaller than the k-th price
-                where k is the block size. Moreover, the miner and users can
-                also collude through the smart contract mechanisms available in
-                modern cryptocurrencies.
-                </p>
-
-                <p align="justify">
-                I will talk about a new foundation for mechanism design in a decentralized
-                environment. I will prove an impossibility result which rules out the existence
-                of a dream transaction fee mechanism that incentivizes honest behavior for the
-                user, the miner, and a miner-user coalition at the same time. I will then argue
-                why the prior modeling choices are too draconian, and how we can overcome this
-                lower bound by capturing hidden costs pertaining to certain deviations.
+                <b>Abstract:</b> Elections are a special security problem because it is not good enough for systems to be secure and results correct - they must also be verifiably so. In this talk I'll discuss a setting increasingly common in the US, Australia and elsewhere: citizens vote privately on paper, then the votes are digitized and counted electronically. Risk Limiting Audits, invented by Philip Stark, provide rigorous statistical guarantees of an accurate election result in this situation, but were originally designed only for the relatively simple electoral processes used in the USA. I'll explain our techniques for auditing instant-runoff (IRV) elections and other complex social choice functions, including recent and future practical deployments in the USA. I'll conclude with important open problems, particularly for the single transferable vote (a.k.a. Australian Senate voting).
+ 
+                Based on joint work with Michelle Blom, Andrew Conway, Alexander Ek, Philip B Stark, Peter J Stuckey and Damjan Vukcevic.
                 </p>
                 
-                
-                <img src="./images/key3.png" alt="Elaine Shi" class="w3-left w3-circle w3-margin-right" style="width:25%">
                 <p align="justify">
-                Elaine Shi is an Associate Professor at Carnegie Mellon
-                University. Her research interests include cryptography,
-                algorithms, and foundations of blockchains. Prior to CMU, she
-                taught at the University of Maryland and Cornell University.
-                She is a recipient of the Packard Fellowship, the Sloan
-                Fellowship, the ONR YIP Award, the NSA best scientific
-                cybersecurity paper award, and various other best paper awards.
+                <b>Bio:</b>Teague's research focuses primarily on cryptographic methods for achieving security and privacy, particularly for issues of public interest such as election integrity and the protection of government data. She was part of the team (with Chris Culnane and Ben Rubinstein) who discovered the easy re-identification of doctors and patients in the Medicare/PBS open dataset released by the Australian Department of Health. She has co-designed numerous protocols for improved election integrity in e-voting systems, and co-discovered serious weaknesses in the cryptography of deployed e-voting systems in New South Wales, Western Australia and Switzerland. She lives and works on Wurundjeri land in Southeastern Australia (near Melbourne). In 2023 she founded Democracy Developers Ltd, an Australian not-for-profit that builds open-source software for supporting democracy.
                 </p>
             </div>
             <br>
@@ -84,31 +59,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <!-- Second Keynote -->
         <div class="w3-card-4">
             <header class="w3-container w3-padding w3-theme-d2">
-                <span class="title">Machine learning is becoming less dependable</span><br />
-                <span class="author"><a href="https://nicholas.carlini.com/" target="_blank">Nicholas Carlini</a></span>, 
-                <span class="affiliation">Google Brain</span>
+                <span class="title">Lions OS: Towards a truly dependable operating system</span><br />
+                <span class="author"><a href="https://gernot-heiser.org/" target="_blank">Prof. Gernot Heiser</a></span>, 
+                <span class="affiliation">UNSW Sydney</span>
             </header>
             <div class="w3-container">
-                
+                <img src="./images/kn/Gernot_Heiser.png" alt="Gernot Heiser" class="w3-left w3-margin-top w3-margin-right" style="width:15%">
                 <p align="justify">
-                Machine learning has seen incredible progress over the past few
-                years, and problems once seen as science fiction are now nearly
-                trivial. However current machine learning systems lack one
-                important property: dependability. In this talk I examine the
-                (lack of) dependability in modern machine learning techniques
-                when evaluated in adversarial environments. And if we continue
-                in the current direction, I argue future machine learning
-                systems will be less reliable in the future.
+                  The formal verification of the seL4 microkernel, completed almost 15 years ago, was a major step towards making a truly dependable OS a reality, but not more than a first step. While seL4 has now been deployed in a number of defence and civilian projects, and cars running an seL4-based OS will be on the road this year, the sad reality is that there are probably more failures than successes in seL4 deployment. We have to conclude that it is not sufficient to provide an open-source microkernel and hoping the community will build practical systems around it. Coming up with a good design of an seL4-based system, including re-use of legacy services, requires far too much expertise.
+
+                  The Trustworthy Systems Group at UNSW has therefore embarked on a project to design, implement and verify a complete seL4-based OS, Lions OS (named after the author of the Lions Book that taught Unix to generations of programmers). The name is program: we aim to make the project feasible by applying some of the core principles of Unix: simplicity and clean design. In addition we are restricting ourselves (for now, at least) to systems with a static architecture, i.e. the set of components and (the ceiling of) the communication channels connecting them are fixed at system build time. This restriction is compatible with at least the vast majority of cyberphysical, IoT and other embedded systems.
+                  
+                  Specifically, our aim is to build an OS that is (a) provably secure and reliable, (b) performing comparably to insecure mainstream systems such as Linux, and (c) adaptable to a wide range of use cases within the target domain. A core ingredient for making end-to-end verification scale to a complete OS is the Pancake language, a new systems language with a verified compiler which we will use to implement at least part of Lions OS.
+                  
+                  We have just released a first, open-source version of Lions OS. While still rudimentary, our experience so far is that a highly modular architecture, if done well, can result in a well-performing system, while keeping modules simple enough to verify them with automated techniques. Our roadmap for Lions OS includes end-to-end correctness and security proofs, formal reasoning about timeliness of mixed criticality systems, and provable elimination of information leakage through microarchitectural timing channels.
                 </p>
                 
-                
-                <img src="./images/key2.jpg" alt="Nicholas Carlini" class="w3-left w3-circle w3-margin-right" style="width:25%">
                 <p align="justify">
-                Nicholas Carlini is a research scientist at Google Brain. He
-                studies the security and privacy of machine learning, and for
-                this has received best paper awards at ICML, USENIX Security
-                and IEEE S&P. He obtained his PhD from the University of
-                California, Berkeley in 2018
+                  Gernot Heiser is Scientia (distinguished) Professor and John Lions Chair of Operating Systems at UNSW Sydney, where he leads the Trustworthy Systems research group. His research interest are in operating systems, real-time systems, security and safety. His research vision is to completely change the cybersecurity game from playing catch-up with attackers to systems that are provably secure and safe. With his team he pioneered the large-scale formal verification of systems code, specifically the design, implementation and formal verification  of the seL4 microkernel; seL4 is now being used in real-world security- and safety-critical systems. 
+
+                  Heiser's former company Open Kernel Labs, acquired by General Dynamics in 2012, marketed the OKL4 microkernel, which shipped on billions of mobile wireless chips and is deployed on the secure enclave of all iOS devices. He presently serves as Chief Scientist of Neutrality, and Chairman of the seL4 Foundation. Gernot is a Fellow of the ACM, the IEEE, Engineers Australia, the Australian Academy of Technology and Engineering (ATSE) and the Royal Society of New South Wales (RSN) and a Member of the German Academy of Sciences Leopoldina. He is also an ACM Distinguished Lecturer and an IEEE Distinguished Visitor.
                 </p>
             </div>
             <br>
@@ -116,7 +86,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 		
 		<br><br>
   
-        <!-- Third Keynote -->
+        <!-- Third Keynote
         <div class="w3-card-4">
             <header class="w3-container w3-padding w3-theme-d2">
                 <span class="title">Resilience and fault tolerance for extreme-scale scientific computing</span><br />
@@ -183,7 +153,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 </p>
             </div>
             <br>
-        </div>
+        </div> -->
 
         <br><br>
   
