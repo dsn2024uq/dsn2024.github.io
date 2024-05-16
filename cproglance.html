@@ -32,13 +32,13 @@
 
 <style>
 	:root {
-		--awards-color: rgba(255, 192, 203, 0.95);
+		--awards-color: rgba(118, 203, 78, 0.95);
 		--keynotes-color: rgba(142, 169, 219, 0.95);
 		--rt-color: rgba(193, 228, 169, 0.95);
-		--it-color: rgba(35, 212, 225, 0.95);
+		--it-color: rgba(124, 188, 189, 0.896);
 		--d23-color: rgba(203, 202, 149, 0.95);
 		--tut-color: rgba(143, 183, 140, 0.95);
-		--df-color: rgba(177, 79, 30, 0.75);
+		--df-color: rgba(220, 158, 126, 0.75);
 		--social-color: rgba(48, 184, 150, 0.95);
 		--workshop-color: rgba(251, 228, 213, 0.95);
 		--dsml-color: #6a96c2;
@@ -246,31 +246,18 @@
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">9:00 - 9:30</span></td>
-								<td class="td-3 dsml" data-bs-toggle="tooltip"><b>DSML Opening</b></td>
-								<td class="td-3 verdi" id="ssiv1" data-bs-toggle="tooltip"><b>VERDI Opening</b></td>
+								<td class="td-3 dsml" rowspan="3" data-bs-toggle="tooltip"><b>DSML 1</b></td>
+								<td class="td-3 verdi" rowspan="3" id="ssiv1" data-bs-toggle="tooltip"><b>VERDI 1</b></td>
 
-								<td class="td-4 tut-session" rowspan="3" id="dsml1" data-bs-toggle="tooltip"><b>Zero-Knowledge Proofs
-										for Blockchains</b><br>
-									Sushmita Ruj
+								<td class="td-4 tut-session" rowspan="3" id="dsml1" data-bs-toggle="tooltip"><b>Tutorial 1
 								</td>
-								<td class="td-5 tut-session" rowspan="3" id="axc1" data-bs-toggle="tooltip"><b>Evaluating Performance and
-										Dependability of Blockchain Protocols with Diablo</b><br>
-									Andrei Lebedev, Vincent Gramoli
+								<td class="td-5 tut-session" rowspan="3" id="axc1" data-bs-toggle="tooltip"><b>Tutorial 2
 								</td>
-								<td class="td-6 dccs" rowspan="3" id="axc1" data-bs-toggle="tooltip">DCCS 1
+								<td class="td-6 dccs" rowspan="3" id="axc1" data-bs-toggle="tooltip"><b>DCCS 1</b>
 								</td>
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">9:30 - 10:00</span></td>
-								<td class="td-2 dsml" rowspan="2" id="dcds1" data-bs-toggle="tooltip"><b>DSML
-									Keynote:<br>
-									TBD</b><br>
-									Taylor Johnson</td>
-								<td class="td-3 verdi" rowspan="2" id="ssiv1" data-bs-toggle="tooltip"><b>VERDI
-									Keynote:
-									On Improving the Robustness of Convolutional Neural Networks Using In-Parameter
-									Zero-Space Error Correction Codes</b><br>
-									Juan Carlos Ruiz</td>
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">10:00 - 10:30</span></td>
@@ -281,32 +268,18 @@
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">11:00 - 11:30</span></td>
-								<td class="td-3 dsml" id="dcds2" data-bs-toggle="tooltip"><b>Adversarial Patch Detection: Leveraging Depth Contrast for Enhanced Threat Visibility</b><br>
-									Niklas Bunzel, Jannis Hamborg
+								<td class="td-3 dsml" rowspan="3" id="dcds2" data-bs-toggle="tooltip"><b>DSML 2</b>
 									</td>
-								<td class="td-3 verdi" id="ssiv2" data-bs-toggle="tooltip"><b>Hybrid Hardware/Software Detection of Multi-Bit Upsets in Memory</b><br>
-									Robin Thunig, Christoph Borchert, Urs Kober, Horst Schirmeier</td>
-								<td class="td-3 tut-session" rowspan="3" id="dsml2" data-bs-toggle="tooltip"><b>Zero-Knowledge Proofs for Blockchains</b><br>
-									Sushmita Ruj</td>
-								<td class="td-3 tut-session" rowspan="3" id="axc2" data-bs-toggle="tooltip"><b>Evaluating Performance and Dependability of Blockchain Protocols with Diablo</b><br>
-									Andrei Lebedev, Vincent Gramoli</td>
-								<td class="td-3 dccs" rowspan="3" id="verdi2" data-bs-toggle="tooltip">DCCS 2</td>
+								<td class="td-3 verdi" rowspan="3" id="ssiv2" data-bs-toggle="tooltip"><b>VERDI 2</b></td>
+								<td class="td-3 tut-session" rowspan="3" id="dsml2" data-bs-toggle="tooltip"><b>Tutorial 1</b></td>
+								<td class="td-3 tut-session" rowspan="3" id="axc2" data-bs-toggle="tooltip"><b>Tutorial 2</b></td>
+								<td class="td-3 dccs" rowspan="3" id="verdi2" data-bs-toggle="tooltip"><b>DCCS 2</td>
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">11:30 - 12:00</span></td>
-								<td class="td-3 dsml" id="dcds2" data-bs-toggle="tooltip"><b>Unlearning Backdoor Attacks through Gradient-Based Model Pruning</b><br>
-									Kealan Dunnett, Reza Arablouei, Dimity Miller, Volkan Dedeoglu, Raja Jurdak
-									</td>
-								<td class="td-3 verdi" id="ssiv2" data-bs-toggle="tooltip"><b>Highly Comprehensive and Efficient Memory Safety Enforcement with Pointer Tagging</b><br>
-									Xiaolei Wang, Bin Zhang, Chaojing Tang, Long Zhang</td>
 							</tr>	
 							<tr>
 								<td class="td-1"><span class="">12:00 - 12:30</span></td>
-								<td class="td-3 dsml" id="dcds2" data-bs-toggle="tooltip"><b>Universal Soldier: Using Universal Adversarial Perturbations for Detecting Backdoor Attacks</b><br>
-									Xiaoyun Xu, Oguzhan Ersoy, Hamidreza Tajalli, Stjepan Picek<br>
-									</td>
-								<td class="td-3 verdi" id="ssiv2" data-bs-toggle="tooltip"><b>Enhancing Continuous Risk Assessment: The Role of Safety Engineers in Early Hazard Identification</b><br>
-									Anil Ranjitbhai Patel, Peter Liggesmeyer</td>
 							</tr>													
 							<tr>
 								<td class="td-1"><span class="">12:30 - 13:30</span></td>
@@ -314,56 +287,29 @@
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">13:30 - 14:00</span></td>
-								<td class="td-3 dsml" rowspan="2" id="dcds3" data-bs-toggle="tooltip"><b>DSML Keynote:<br>
-									TBD</b><br>
-									Guangdong Bai</td>
-								<td class="td-3" id="ssiv3" data-bs-toggle="tooltip">Break</td>
-								<td class="td-3 tut-session" rowspan="3" id="axc3" data-bs-toggle="tooltip"><b>Safe, Secure, and Trustworthy Artificial Intelligence (AI) via Formal Verification of Neural Networks and Autonomous Cyber-Physical Systems (CPS) with NNV</b><br>
-									Taylor T. Johnson, Diego Manzanas Lopez, Hoang-Dung Tran
+								<td class="td-3 dsml" rowspan="3" id="dcds3" data-bs-toggle="tooltip"><b>DSML 3</b></td>
+								<td class="td-3 verdi" rowspan="3" id="ssiv3" data-bs-toggle="tooltip"><b>VERDI 3</b></td>
+								<td class="td-3 tut-session" rowspan="3" id="axc3" data-bs-toggle="tooltip"><b>Tutorial 3</b>
 								</td>
-								<td class="td-3 tut-session" rowspan="3" id="verdi3" data-bs-toggle="tooltip"><b>LLTFI and the Art of Fault Injection</b><br>
-									Karthik Pattabiraman, Abraham Chan
+								<td class="td-3 tut-session" rowspan="3" id="verdi3" data-bs-toggle="tooltip"><b>Tutorial 4</b>
 								</td>
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">14:00 - 14:30</span></td>
-								<td class="td-2 verdi"><b>Cybersecurity Pathways towards CE-Certified Autonomous Forestry Machines</b><br>
-									Mazen Mohamad, Ramana Reddy Avula, Peter Folkesson, Pierre Kleberger, Aria Mirzai, Martin Skoglund, Marvin Damschen</td>
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">14:30 - 15:00</span></td>
-								<td class="td-3 dsml" rowspan="5" id="dcds4" data-bs-toggle="tooltip"><b>TrustDDL: A Privacy-Preserving Byzantine-Robust Distributed Deep Learning Framework</b><br>
-									René Klaus Nikiel, Meghdad Mirabi, Carsten Binnig<br>
-									
-									<b>Measuring the effects of environmental influences on Object Detection</b><br>
-									Niklas Bunzel, Michael Geißler, Gerrit Klause<br>
-									
-									<b>Hybrid Convolutional Neural Networks with Reliabality Guarantee</b><br>
-									Hans Dermot Doran, Suzana Veljanovska<br>
-									
-									<b>Break</b><br>
-									
-									<b>Intrusion Detection Systems using Quantum-Inspired Density Matrix Encodings</b><br>
-									Larry Huynh, Jin B. Hong, Hajime Suzuki, Ajmal Mian, Seyit Camtepe<br>
-									
-									<b>A Fault Diagnosis Method for Analog Circuits Based on Task Transfer Learning</b><br>
-									Zhongyu Gao, Xiaoqing Wen, Aibin Yan<br>
-									
-									<b>Discussion and Closing Remarks</b></td>
-								<td class="td-3 verdi" id="ssiv4" data-bs-toggle="tooltip"><b>Virtual Evaluation of Dependability Attributes for Mission-Critical Cyber-Physical Systems</b><br>
-									Adam Bachorek, Benedikt Lüken-Winkels, Iron Prando Da Silva, Stefan Schwenk, Markus Damm, Pablo Oliveira Antonino</td>
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">15:00 - 15:30</span></td>
-								<td class="td-3 tdbg" colspan="4" id="dcds4" data-bs-toggle="tooltip">Afternoon Tea</td>
+								<td class="td-3 tdbg" colspan="5" id="dcds4" data-bs-toggle="tooltip">Afternoon Tea</td>
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">15:30 - 16:00</span></td>
+								<td class="td-3 dsml" rowspan="3" id="ssiv4" data-bs-toggle="tooltip"><b>DSML 4</b></td>
 								<td class="td-3" id="dcds4" data-bs-toggle="tooltip"></td>
-								<td class="td-3 tut-session" rowspan="3" id="ssiv4" data-bs-toggle="tooltip"><b>Safe, Secure, and Trustworthy Artificial Intelligence (AI) via Formal Verification of Neural Networks and Autonomous Cyber-Physical Systems (CPS) with NNV</b><br>
-									Taylor T. Johnson, Diego Manzanas Lopez, Hoang-Dung Tran</td>
-								<td class="td-3 tut-session" rowspan="3" id="dsml4" data-bs-toggle="tooltip"><b>LLTFI and the Art of Fault Injection</b><br>
-									Karthik Pattabiraman, Abraham Chan
+								<td class="td-3 tut-session" rowspan="3" id="dsml4" data-bs-toggle="tooltip"><b>Tutorial 3</b>
+									<td class="td-3 tut-session" rowspan="3" id="dsml4" data-bs-toggle="tooltip"><b>Tutorial 4</b>
 								</td>
 							</tr>														
 							<tr>
@@ -492,17 +438,7 @@
 								<td class="td-1"><span class="">11:00 - 11:30</span></td>
 								<td class="td-2 rt-session" rowspan="3">Research 4</td>
 								<td class="td-2 rt-session" rowspan="3">Research 5</td>
-								<td class="td-2 disrupt" rowspan="3"><b>Neural Fault Injection: Generating Software Faults from Natural Language</b><br>
-									Domenico Cotroneo and Pietro Liguori<br>
-									
-									<b>Harnessing Explainability to Improve ML Ensemble Resilience</b><br>
-									Abraham Chan, Arpan Gujarati, Karthik Pattabiraman and Sathish Gopalakrishnan<br>
-									
-									<b>When Green Computing Meets Performance and Resilience SLOs</b><br>
-									Haoran Qiu, Weichao Mao, Chen Wang, Saurabh Jha, Hubertus Franke, Chandra Narayanaswami, Tamer Başar, Zbigniew Kalbarczyk and Ravishankar Iyer<br>
-									
-									<b>AuSSE: A Novel Framework for Security and Safety Evaluation in Autonomous Vehicles</b><br>
-									Nhung Nguyen, Jin-Hee Cho, Terrence J. Moore, Seunghyun Yoon, Hyuk Lim, Frederica Nelson, Guangdong Bai and Dan Kim</td>
+								<td class="td-2 disrupt" rowspan="3"><b>Disrupt 1</b></td>
 								<td class="td-2 poster" rowspan="3">Poster</td>
 							</tr>
 							<tr>
@@ -522,17 +458,7 @@
 								<td class="td-1"><span class="">13:30 - 14:00</span></td>
 								<td class="td-2 rt-session" rowspan="3">Research 6</td>
 								<td class="td-2 rt-session" rowspan="3">Research 7</td>
-								<td class="td-2 disrupt" rowspan="3"><b>An Experimental Analysis of Combined RowHammer and RowPress Read Disturbance in Modern DRAM Chips</b><br>
-									Haocong Luo, İsmail Emir Yüksel, Ataberk Olgun, Giray Yaglikci, Mohammad Sadrosadati and Onur Mutlu<br>
-									
-									<b>PANDA: Practical Adversarial Attacks Against Intrusion Detection Applications</b><br>
-									Subrat Kumar Swain, Vireshwar Kumar, Guangdong Bai and Dan Dongseong Kim<br>
-									
-									<b>Exploring Use of Symbolic Execution for Service Analysis</b><br>
-									Yang Zhang, Long Wang, Zhengang Wang and Dongdong Shangguan<br>
-									
-									<b>On the Design of Coordination Services for IoT</b><br>
-									Tiago Carvalho, Antonio Casimiro and Alysson Bessani</td>
+								<td class="td-2 disrupt" rowspan="3"><b>Disrupt 2</b></td>
 								<td class="td-2 it-session" rowspan="3">Industry 2</td>
 							</tr>
 							<tr>
