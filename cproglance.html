@@ -53,6 +53,22 @@
 		font-weight: 600;
 		font-size: 14px;
 	} */
+	.legend-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between items as needed */
+	}
+
+	.legend-items span {
+		display: flex;
+		align-items: center;
+		gap: 5px; /* Space between the icon and the text */
+	}
+	.legend p {
+    margin-top: 5pt;    /* Removes top margin */
+    margin-bottom: 0; /* Removes bottom margin */
+	}
+
 	.dsml{
 		background-color:var(--dsml-color);
 	}
@@ -247,7 +263,7 @@
 							<tr>
 								<td class="td-1"><span class="">9:00 - 9:30</span></td>
 								<td class="td-3 dsml" rowspan="3" data-bs-toggle="tooltip">DSML 1</td>
-								<td class="td-3 verdi" rowspan="3" id="ssiv1" data-bs-toggle="tooltip">VERDI 1</td>
+								<td class="td-3 verdi" rowspan="3" id="ssiv1" data-bs-toggle="tooltip">VERDI 1td>
 
 								<td class="td-4 tut-session" rowspan="3" id="dsml1" data-bs-toggle="tooltip">Tutorial 1
 								</td>
@@ -324,7 +340,111 @@
 							</tr>
 						</tbody>
 					</table>
-	
+
+
+					<div class="legend">
+						<p class="fw-bold">Legend:</p>
+						<div class="legend-items">
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--dsml-color);stroke-width:3;stroke:var(--dsml-color)" width="15"></rect></svg> DSML</span>
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--verdi-color);stroke-width:3;stroke:var(--verdi-color)" width="15"></rect></svg> VERDI</span>
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--tut-color);stroke-width:3;stroke:var(--tut-color)" width="15"></rect></svg> Tutorial</span>
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--dccs-color);stroke-width:3;stroke:var(--dccs-color)" width="15"></rect></svg> DCCS</span>
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--keynotes-color);stroke-width:3;stroke:var(--keynotes-color)" width="15"></rect></svg> Keynotes</span>
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--rt-color);stroke-width:3;stroke:var(--rt-color)" width="15"></rect></svg> Research</span>
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--it-color);stroke-width:3;stroke:var(--it-color)" width="15"></rect></svg> Industry</span>
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--d23-color);stroke-width:3;stroke:var(--d23-color)" width="15"></rect></svg> Disrupt</span>
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--df-color);stroke-width:3;stroke:var(--df-color)" width="15"></rect></svg> Doctoral Forum</span>
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--poster-color);stroke-width:3;stroke:var(--poster-color)" width="15"></rect></svg> Poster</span>
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--awards-color);stroke-width:3;stroke:var(--awards-color)" width="15"></rect></svg> Awards</span>
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--social-color);stroke-width:3;stroke:var(--social-color)" width="15"></rect></svg> Social Events</span>
+						</div>
+					</div>
+
+					<hr>
+					<div class="session">
+						<h6>DSML 1</h6>
+						<ul>
+							<li>DSML Opening</li>
+							<li>DSML Keynote: TBD by Taylor Johnson</li>
+						</ul>
+					</div>
+					<div class="session">
+						<h6>DSML 2</h6>
+						<ul>
+							<li>Adversarial Patch Detection: Leveraging Depth Contrast for Enhanced Threat Visibility by Niklas Bunzel, Jannis Hamborg</li>
+							<li>Unlearning Backdoor Attacks through Gradient-Based Model Pruning by Kealan Dunnett, Reza Arablouei, Dimity Miller, Volkan Dedeoglu, Raja Jurdak</li>
+							<li>Universal Soldier: Using Universal Adversarial Perturbations for Detecting Backdoor Attacks by Xiaoyun Xu, Oguzhan Ersoy, Hamidreza Tajalli, Stjepan Picek</li>
+						</ul>
+					</div>
+					<div class="session">
+						<h6>DSML 3</h6>
+						<ul>
+							<li>DSML Keynote: TBD by Guangdong Bai</li>
+						</ul>
+					</div>
+					<div class="session">
+						<h6>DSML 4</h6>
+						<ul>
+							<li>TrustDDL: A Privacy-Preserving Byzantine-Robust Distributed Deep Learning Framework by René Klaus Nikiel, Meghdad Mirabi, Carsten Binnig</li>
+							<li>Measuring the effects of environmental influences on Object Detection by Niklas Bunzel, Michael Geißler, Gerrit Klause</li>
+							<li>Hybrid Convolutional Neural Networks with Reliability Guarantee by Hans Dermot Doran, Suzana Veljanovska</li>
+							<li>Break</li>
+							<li>Intrusion Detection Systems using Quantum-Inspired Density Matrix Encodings by Larry Huynh, Jin B. Hong, Hajime Suzuki, Ajmal Mian, Seyit Camtepe</li>
+							<li>A Fault Diagnosis Method for Analog Circuits Based on Task Transfer Learning by Zhongyu Gao, Xiaoqing Wen, Aibin Yan</li>
+							<li>Discussion and Closing Remarks</li>
+						</ul>
+					</div>
+					
+					<div class="session">
+						<h6>VERDI 1</h6>
+						<ul>
+							<li>VERDI Opening</li>
+							<li>VERDI Keynote: On Improving the Robustness of Convolutional Neural Networks Using In-Parameter Zero-Space Error Correction Codes by Juan Carlos Ruiz</li>
+						</ul>
+					</div>
+					<div class="session">
+						<h6>VERDI 2</h6>
+						<ul>
+							<li>Hybrid Hardware/Software Detection of Multi-Bit Upsets in Memory by Robin Thunig, Christoph Borchert, Urs Kober, Horst Schirmeier</li>
+							<li>Highly Comprehensive and Efficient Memory Safety Enforcement with Pointer Tagging by Xiaolei Wang, Bin Zhang, Chaojing Tang, Long Zhang</li>
+							<li>Enhancing Continuous Risk Assessment: The Role of Safety Engineers in Early Hazard Identification by Anil Ranjitbhai Patel, Peter Liggesmeyer</li>
+						</ul>
+					</div>
+					<div class="session">
+						<h6>VERDI 3</h6>
+						<ul>
+							<li>Cybersecurity Pathways towards CE-Certified Autonomous Forestry Machines by Mazen Mohamad, Ramana Reddy Avula, Peter Folkesson, Pierre Kleberger, Aria Mirzai, Martin Skoglund, Marvin Damschen</li>
+							<li>Virtual Evaluation of Dependability Attributes for Mission-Critical Cyber-Physical Systems by Adam Bachorek, Benedikt Lüken-Winkels, Iron Prando Da Silva, Stefan Schwenk, Markus Damm, Pablo Oliveira Antonino</li>
+						</ul>
+					</div>
+					
+					<div class="session">
+						<h6>Tutorial 1</h6>
+						<ul>
+							<li>Zero-Knowledge Proofs for Blockchains by Sushmita Ruj</li>
+						</ul>
+					</div>
+					<div class="session">
+						<h6>Tutorial 2</h6>
+						<ul>
+							<li>Evaluating Performance and Dependability of Blockchain Protocols with Diablo by Andrei Lebedev, Vincent Gramoli</li>
+						</ul>
+					</div>
+					<div class="session">
+						<h6>Tutorial 3</h6>
+						<ul>
+							<li>Safe, Secure, and Trustworthy Artificial Intelligence (AI) via Formal Verification of Neural Networks and Autonomous Cyber-Physical Systems (CPS) with NNV by Taylor T. Johnson, Diego Manzanas Lopez, Hoang-Dung Tran</li>
+						</ul>
+					</div>
+					<div class="session">
+						<h6>Tutorial 4</h6>
+						<ul>
+							<li>LLTFI and the Art of Fault Injection by Karthik Pattabiraman, Abraham Chan</li>
+						</ul>
+					</div>
+
+
+
 				</div>
 				<div class="tab-pane fade " id="day2" role="tabpanel" aria-labelledby="day2-tab">
 					<p>&nbsp;</p>
@@ -567,68 +687,8 @@
 					</table>				
 				</div>
 			</div>
-			<p>&nbsp;</p>
-			<p class="fw-bold">Legend:</p>
-			<p><svg height="15" width="15">
-					<rect height="15" style="fill:var(--dsml-color);stroke-width:3;stroke:--dsml-color" width="15">
-					</rect>
-				</svg> DSML<br>
 
-				<svg height="15" width="15">
-					<rect height="15" style="fill:var(--verdi-color);stroke-width:3;stroke:var(--verdi-color)" width="15">
-					</rect>
-				</svg> VERDI<br>
-
-				<svg height="15" width="15">
-					<rect height="15" style="fill:var(--tut-color);stroke-width:3;stroke:var(--tut-color)" width="15">
-					</rect>
-				</svg> Tutorial<br>
-
-				<svg height="15" width="15">
-					<rect height="15" style="fill:var(--dccs-color);stroke-width:3;stroke:var(--dccs-color)" width="15">
-					</rect>
-				</svg> DCCS<br>
-
-				<svg height="15" width="15">
-					<rect height="15" style="fill:var(--keynotes-color);stroke-width:3;stroke:--keynotes-color" width="15">
-					</rect>
-				</svg> Keynotes<br>
-
-				<svg height="15" width="15">
-					<rect height="15" style="fill:var(--rt-color);stroke-width:3;stroke:var(--rt-color)" width="15">
-					</rect>
-				</svg> Research<br>
-
-				<svg height="15" width="15">
-					<rect height="15" style="fill:var(--it-color);stroke-width:3;stroke:var(--it-color)" width="15">
-					</rect>
-				</svg> Industry<br>
-
-				<svg height="15" width="15">
-					<rect height="15" style="fill:var(--d23-color);stroke-width:3;stroke:var(--d23-color)" width="15">
-					</rect>
-				</svg> Disrupt<br>
-
-				<svg height="15" width="15">
-					<rect height="15" style="fill:var(--df-color);stroke-width:3;stroke:var(--df-color)" width="15">
-					</rect>
-				</svg> Doctoral Forum<br>
-
-				<svg height="15" width="15">
-					<rect height="15" style="fill:var(--poster-color);stroke-width:3;stroke:var(--poster-color)" width="15">
-					</rect>
-				</svg> Poster<br>
-
-				<svg height="15" width="15">
-					<rect height="15" style="fill:var(--awards-color);stroke-width:3;stroke:var(--awards-color)"
-						width="15"></rect>
-				</svg> Awards<br>
-
-				<svg height="15" width="15">
-					<rect height="15" style="fill:var(--social-color);stroke-width:3;stroke:var(--social-color)"
-						width="15"></rect>
-				</svg> Social Events
-			</p>	
+			
 
 		</div>
 
