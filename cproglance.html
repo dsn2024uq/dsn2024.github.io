@@ -46,7 +46,25 @@
 		--dccs-color: darkgray;
 		--poster-color: rgb(240, 193, 163);
 	}
-
+	.dsml_1 {
+		background: linear-gradient(to bottom, white 15%, var(--dsml-color) 15%, var(--dsml-color) 85%, white 85%);
+	}
+	.dsml_2 {
+		/* background: linear-gradient(to bottom, var(--dsml-color) 85%,white 100%); */
+		background: linear-gradient(to bottom, var(--dsml-color) 0%, var(--dsml-color) 85%, white 85%);
+	}
+	.dsml_3 {
+		/* background: linear-gradient(to bottom, var(--dsml-color) 85%,white 100%); */
+		background: linear-gradient(to bottom, var(--dsml-color) 0%, var(--dsml-color) 125%);
+	}
+	.dsml_4 {
+		/* background: linear-gradient(to bottom, var(--dsml-color) 85%,white 100%); */
+		background: linear-gradient(to bottom, white 15%, var(--dsml-color) 15%, var(--dsml-color) 95%, white 95%);
+	}
+	.dsml_5 {
+		/* background: linear-gradient(to bottom, var(--dsml-color) 85%,white 100%); */
+		background: linear-gradient(to bottom, white 27%, var(--dsml-color) 27%, var(--dsml-color) 100%);
+	}	
 	/* .awards-session,
 	.awards-rt-session,
 	.keynotes-session {
@@ -262,7 +280,7 @@
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">9:00 - 9:30</span></td>
-								<td class="td-3 dsml" rowspan="3" data-bs-toggle="tooltip"><b><a href="#DSML_1">DSML 1</a></b></td>
+								<td class="td-3 dsml dsml_1" rowspan="3" data-bs-toggle="tooltip"><b><a href="#DSML_1">DSML 1</a></b></td>
 								<td class="td-3 verdi" rowspan="3" id="ssiv1" data-bs-toggle="tooltip"><b><a href="#VERDI_1">VERDI 1</a></b></td>
 
 								<td class="td-4 tut-session" rowspan="3" id="dsml1" data-bs-toggle="tooltip"><b><a href="#T_1">Tutorial 1</a></b>
@@ -284,7 +302,7 @@
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">11:00 - 11:30</span></td>
-								<td class="td-3 dsml" rowspan="3" id="dcds2" data-bs-toggle="tooltip"><b><a href="#DSML_2">DSML 2</a></b>
+								<td class="td-3 dsml dsml_2" rowspan="3" id="dcds2" data-bs-toggle="tooltip"><b><a href="#DSML_2">DSML 2</a></b>
 									</td>
 								<td class="td-3 verdi" rowspan="3" id="ssiv2" data-bs-toggle="tooltip"><b><a href="#VERDI_2">VERDI 2</a></b></td>
 								<td class="td-3 tut-session" rowspan="3" id="dsml2" data-bs-toggle="tooltip"><b><a href="#T_1">Tutorial 1</a></b></td>
@@ -303,7 +321,7 @@
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">13:30 - 14:00</span></td>
-								<td class="td-3 dsml" rowspan="3" id="dcds3" data-bs-toggle="tooltip"><b><a href="#DSML_3">DSML 3</a></b></td>
+								<td class="td-3 dsml dsml_3" rowspan="2" id="dcds3" data-bs-toggle="tooltip"><b><a href="#DSML_3">DSML 3</a></b></td>
 								<td class="td-3 verdi" rowspan="3" id="ssiv3" data-bs-toggle="tooltip"><b><a href="#VERDI_3">VERDI 3</a></b></td>
 								<td class="td-3 tut-session" rowspan="3" id="axc3" data-bs-toggle="tooltip"><b><a href="#T_3">Tutorial 3</a></b>
 								</td>
@@ -315,6 +333,7 @@
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">14:30 - 15:00</span></td>
+								<td class="td-3 dsml dsml_4" rowspan="3" id="dcds3" data-bs-toggle="tooltip"><b><a href="#DSML_4">DSML 4</a></b></td>
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">15:00 - 15:30</span></td>
@@ -322,7 +341,6 @@
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">15:30 - 16:00</span></td>
-								<td class="td-3 dsml" rowspan="3" id="ssiv4" data-bs-toggle="tooltip"><b><a href="#DSML_4">DSML 4</a></b></td>
 								<td class="td-3" id="dcds4" data-bs-toggle="tooltip"></td>
 								<td class="td-3 tut-session" rowspan="3" id="dsml4" data-bs-toggle="tooltip"><b><a href="#T_3">Tutorial 3</a></b>
 									<td class="td-3 tut-session" rowspan="3" id="dsml4" data-bs-toggle="tooltip"><b><a href="#T_4">Tutorial 4</a></b>
@@ -330,6 +348,8 @@
 							</tr>														
 							<tr>
 								<td class="td-1"><span class="">16:00 - 16:30</span></td>
+								<td class="td-3 dsml dsml_5" rowspan="2" id="ssiv4" data-bs-toggle="tooltip"><b><a href="#DSML_5">DSML 5</a></b></td>
+
 							</tr>								
 							<tr>
 								<td class="td-1"><span class="">16:30 - 17:00</span></td>
@@ -362,14 +382,14 @@
 
 					<hr>
 					<div class="session" id="DSML_1">
-						<h6>DSML 1: <i>Norfolk, 9:00 - 10:30, June 24</i></h6>
+						<h6>DSML 1: Keynote Talk, at <i>Norfolk, 9:15 - 10:30, June 24</i></h6>
 						<ul>
 							<li>DSML Opening</li>
-							<li>DSML Keynote: <b>TBD</b> by Taylor Johnson</li>
+							<li>DSML Keynote: <b>TBD</b> by Taylor Johnson, Vanderbilt University</li>
 						</ul>
 					</div>
 					<div class="session" id="DSML_2">
-						<h6>DSML 2: <i>Norfolk, 11:00 - 12:30, June 24</i></h6>
+						<h6>DSML 2: Defense Mechanisms for Secure ML Systems, at <i>Norfolk, 11:00 - 12:15, June 24</i></h6>
 						<ul>
 							<li><b>Adversarial Patch Detection: Leveraging Depth Contrast for Enhanced Threat Visibility</b> by Niklas Bunzel, Jannis Hamborg</li>
 							<li><b>Unlearning Backdoor Attacks through Gradient-Based Model Pruning</b> by Kealan Dunnett, Reza Arablouei, Dimity Miller, Volkan Dedeoglu, Raja Jurdak</li>
@@ -377,33 +397,38 @@
 						</ul>
 					</div>
 					<div class="session" id="DSML_3">
-						<h6>DSML 3: <i>Norfolk, 13:00 - 15:00, June 24</i></h6>
+						<h6>DSML 3: Keynote Talk, at <i>Norfolk, 13:30 - 14:45, June 24</i></h6>
 						<ul>
-							<li>DSML Keynote: <b>TBD</b> by Guangdong Bai</li>
+							<li>DSML Keynote: <b>TBD</b> by Guangdong Bai, The University of Queensland</li>
 						</ul>
 					</div>
 					<div class="session" id="DSML_4">
-						<h6>DSML 4: <i>Norfolk, 15:30 - 17:00, June 24</i></h6>
+						<h6>DSML 4: Dependable and Reliable ML Systems, at <i>Norfolk, 14:45 - 15:50, June 24</i></h6>
 						<ul>
 							<li><b>TrustDDL: A Privacy-Preserving Byzantine-Robust Distributed Deep Learning Framework</b> by René Klaus Nikiel, Meghdad Mirabi, Carsten Binnig</li>
 							<li><b>Measuring the effects of environmental influences on Object Detection</b> by Niklas Bunzel, Michael Geißler, Gerrit Klause</li>
 							<li><b>Hybrid Convolutional Neural Networks with Reliability Guarantee</b> by Hans Dermot Doran, Suzana Veljanovska</li>
-							<li>Break</li>
+							<li>Discussion and Closing Remarks</li>
+						</ul>
+					</div>
+					<div class="session" id="DSML_5">
+						<h6>DSML 5: ML Systems for Security and Beyond, at <i>Norfolk, 16:20 - 17:00, June 24</i></h6>
+						<ul>
 							<li><b>Intrusion Detection Systems using Quantum-Inspired Density Matrix Encodings</b> by Larry Huynh, Jin B. Hong, Hajime Suzuki, Ajmal Mian, Seyit Camtepe</li>
 							<li><b>A Fault Diagnosis Method for Analog Circuits Based on Task Transfer Learning</b> by Zhongyu Gao, Xiaoqing Wen, Aibin Yan</li>
 							<li>Discussion and Closing Remarks</li>
 						</ul>
-					</div>
+					</div>					
 					
 					<div class="session" id="VERDI_1">
-						<h6>VERDI 1: <i>Connaught, 9:00 - 10:30, June 24</i></h6>
+						<h6>VERDI 1: at <i>Connaught, 9:00 - 10:30, June 24</i></h6>
 						<ul>
 							<li>VERDI Opening</li>
 							<li>VERDI Keynote: <b>On Improving the Robustness of Convolutional Neural Networks Using In-Parameter Zero-Space Error Correction Codes</b> by Juan Carlos Ruiz</li>
 						</ul>
 					</div>
 					<div class="session" id="VERDI_2">
-						<h6>VERDI 2: <i>Connaught, 11:00 - 12:30, June 24</i></h6>
+						<h6>VERDI 2: at <i>Connaught, 11:00 - 12:30, June 24</i></h6>
 						<ul>
 							<li><b>Hybrid Hardware/Software Detection of Multi-Bit Upsets in Memory</b> by Robin Thunig, Christoph Borchert, Urs Kober, Horst Schirmeier</li>
 							<li><b>Highly Comprehensive and Efficient Memory Safety Enforcement with Pointer Tagging</b> by Xiaolei Wang, Bin Zhang, Chaojing Tang, Long Zhang</li>
@@ -411,7 +436,7 @@
 						</ul>
 					</div>
 					<div class="session" id="VERDI_3">
-						<h6>VERDI 3: <i>Connaught, 13:30 - 15:00, June 24</i></h6>
+						<h6>VERDI 3: at <i>Connaught, 13:30 - 15:00, June 24</i></h6>
 						<ul>
 							<li><b>Cybersecurity Pathways towards CE-Certified Autonomous Forestry Machines</b> by Mazen Mohamad, Ramana Reddy Avula, Peter Folkesson, Pierre Kleberger, Aria Mirzai, Martin Skoglund, Marvin Damschen</li>
 							<li><b>Virtual Evaluation of Dependability Attributes for Mission-Critical Cyber-Physical Systems</b> by Adam Bachorek, Benedikt Lüken-Winkels, Iron Prando Da Silva, Stefan Schwenk, Markus Damm, Pablo Oliveira Antonino</li>
@@ -419,25 +444,25 @@
 					</div>
 					
 					<div class="session" id="T_1">
-						<h6>Tutorial 1: <i>King George Room, 9:00 - 12:30, June 24</i></h6>
+						<h6>Tutorial 1: at <i>King George Room, 9:00 - 12:30, June 24</i></h6>
 						<ul>
 							<li><b>Zero-Knowledge Proofs for Blockchains</b> by Sushmita Ruj</li>
 						</ul>
 					</div>
 					<div class="session" id="T_2">
-						<h6>Tutorial 2: <i>Olivers, 9:00 - 12:30, June 24</i></h6>
+						<h6>Tutorial 2: at <i>Olivers, 9:00 - 12:30, June 24</i></h6>
 						<ul>
 							<li><b>Evaluating Performance and Dependability of Blockchain Protocols with Diablo</b> by Andrei Lebedev, Vincent Gramoli</li>
 						</ul>
 					</div>
 					<div class="session" id="T_3">
-						<h6>Tutorial 3: <i>King George Room, 13:30 - 17:00, June 24</i></h6>
+						<h6>Tutorial 3: at <i>King George Room, 13:30 - 17:00, June 24</i></h6>
 						<ul>
 							<li><b>Safe, Secure, and Trustworthy Artificial Intelligence (AI) via Formal Verification of Neural Networks and Autonomous Cyber-Physical Systems (CPS) with NNV</b> by Taylor T. Johnson, Diego Manzanas Lopez, Hoang-Dung Tran</li>
 						</ul>
 					</div>
 					<div class="session" id="T_4">
-						<h6>Tutorial 4: <i>Olivers, 13:30 - 17:00, June 24</i></h6>
+						<h6>Tutorial 4: at <i>Olivers, 13:30 - 17:00, June 24</i></h6>
 						<ul>
 							<li><b>LLTFI and the Art of Fault Injection</b> by Karthik Pattabiraman, Abraham Chan</b></li>
 						</ul>
