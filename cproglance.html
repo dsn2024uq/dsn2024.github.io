@@ -207,8 +207,6 @@
 		font-size: 12px;
 	}
 
-	.sessin-room-highlight {}
-
 	#program-content {
 		font-size: 13px;
 	}
@@ -217,6 +215,27 @@
 		font-weight: 800;
 		background-color: black;
 		color: white;
+	}
+	select {
+		padding: 10px;
+		font-size: 16px;
+		margin-bottom: 20px;
+		border-radius: 4px;
+		border: 1px solid #ccc;
+		width: 100%;
+		max-width: 300px;
+	}
+	.pdf-container {
+		width: 100%;
+		height: 900px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		overflow: hidden;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+	embed {
+		width: 100%;
+		height: 100%;
 	}
 </style>
 
@@ -460,9 +479,6 @@
 							<li><b>LLTFI and the Art of Fault Injection</b> by Karthik Pattabiraman, Abraham Chan</b></li>
 						</ul>
 					</div>
-					<hr>
-
-
 				</div>
 				<div class="tab-pane fade " id="day2" role="tabpanel" aria-labelledby="day2-tab">
 					<p>&nbsp;</p>
@@ -587,7 +603,6 @@
 							<li><b>SPP: Safe Persistent Pointers for Memory Safety (Reg)</b> by Dimitrios Stavrakakis, Alexandra Panfill, MJin Nam, Pramod Bhatotia</li>
 						</ul>
 					</div>
-					<hr>						
 				</div>
 				<div class="tab-pane fade " id="day3" role="tabpanel" aria-labelledby="day3-tab">
 					<p>&nbsp;</p>
@@ -737,7 +752,6 @@
 							<li><b>On the Design of Coordination Services for IoT</b> by Tiago Carvalho, Antonio Casimiro and Alysson Bessani</li>
 						</ul>
 					</div>
-					<hr>
 				</div>
 				<div class="tab-pane fade " id="day4" role="tabpanel" aria-labelledby="day4-tab">
 					<p>&nbsp;</p>
@@ -876,19 +890,23 @@
 							<li><b>Owl: Differential-based Side-Channel Leakage Detection for CUDA Applications (Reg)</b> by Yu Zhao, Wenjie Xue, Weijie Chen, Weizhong Qiang, Deqing Zou, Hai Jin</li>
 						</ul>
 					</div>	
-					<hr>								
 				</div>
 			</div>
-
-			
-
 		</div>
 
-
+		<hr>
 		<div id="venue_map" style='text-align: center;'>
 			<h3 class="page-header">Venue Map</h3>
-			<p> Coming soon </p>
-			<!-- <img src="images/venue_map_2.png" style='width: 72%'> -->
+			<select id="pdfSelector">
+				<option value="./floorplan/Grand_Windsor_Ballroom.pdf">Grand Windsor Ballroom</option>
+				<option value="./floorplan/Connaught.pdf">Connaught</option>
+				<option value="./floorplan/King_George_Room.pdf">King George Room</option>
+				<option value="./floorplan/Norfolk.pdf">Norfolk</option>
+				<option value="./floorplan/Olivers_Room.pdf">Olivers Room</option>
+			</select>
+			<div class="pdf-container">
+				<embed id="pdfViewer" src="./floorplan/Grand_Windsor_Ballroom.pdf" type="application/pdf" width="100%" height="100%">
+			</div>
 		</div>
 
 
@@ -961,6 +979,13 @@
 				x.className = x.className.replace(" w3-show", "");
 			}
 		}
+
+
+        document.getElementById('pdfSelector').addEventListener('change', function() {
+            var selectedPDF = this.value;
+            document.getElementById('pdfViewer').src = selectedPDF;
+        });
+
 	</script>
 
 	<script src="js/common.js"></script>
