@@ -206,7 +206,10 @@
 		font-weight: 800;
 		font-size: 12px;
 	}
-
+	.session h6 {
+            font-weight: bold;
+            color: rgb(35, 102, 183);
+        }
 	#program-content {
 		font-size: 13px;
 	}
@@ -306,7 +309,7 @@
 								</td>
 								<td class="td-5 tut-session" rowspan="3" id="axc1" data-bs-toggle="tooltip"><b><a href="#T2">Tutorial 2</a></b>
 								</td>
-								<td class="td-6 dccs" rowspan="3" id="axc1" data-bs-toggle="tooltip"><b>DCCS 1</b>
+								<td class="td-6 dccs" rowspan="3" id="axc1" data-bs-toggle="tooltip"><b><a href="#DCCS_1">DCCS 1</b>
 								</td>
 							</tr>
 							<tr>
@@ -326,7 +329,7 @@
 								<td class="td-3 verdi" rowspan="3" id="ssiv2" data-bs-toggle="tooltip"><b><a href="#VERDI_2">VERDI 2</a></b></td>
 								<td class="td-3 tut-session" rowspan="3" id="dsml2" data-bs-toggle="tooltip"><b><a href="#T1">Tutorial 1</a></b></td>
 								<td class="td-3 tut-session" rowspan="3" id="axc2" data-bs-toggle="tooltip"><b><a href="#T2">Tutorial 2</a></b></td>
-								<td class="td-3 dccs" rowspan="3" id="verdi2" data-bs-toggle="tooltip"><b>DCCS 2</b></td>
+								<td class="td-3 dccs" rowspan="3" id="verdi2" data-bs-toggle="tooltip"><b><a href="#DCCS_2">DCCS 2</b></td>
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">11:30 - 12:00</span></td>
@@ -479,6 +482,24 @@
 							<li><b>LLTFI and the Art of Fault Injection</b> by Karthik Pattabiraman, Abraham Chan</b></li>
 						</ul>
 					</div>
+					<div class="session" id="DCCS_1">
+						<h6>DCCS 1: at <i>Olivers Boardroom, 9:00 - 10:40, June 24</i></h6>
+						<ul>
+							<li>DCCS Opening</li>
+							<li>(9:00 - 9:55) DCCS keynote: <b>Advanced Techniques for Deep Neural Network Repair</b> by Paolo Arcaini</b></li>
+							<li>(9:55 - 10:20) <b>DDOSHIELD-IoT: A Testbed for Simulating and Lightweight Detection of IoT Botnet DDoS Attacks</b> by Simona De Vivo, Islam Obaidat, Dong Dai, Pietro Liguori</b></li>
+							<li>(10:20 - 10:40) <b>Caching and Prefetching for Improving ORAM Performance</b> by Naohiro Hayashibara, Kazuaki Kawabata</b></li>
+						</ul>
+					</div>
+					<div class="session" id="DCCS_2">
+						<h6>DCCS 2: at <i>Olivers Boardroom, 10:50 - 12:35, June 24</i></h6>
+						<ul>
+							<li>(10:50 - 11:45) DCCS Keynote: <b>On Perfect Sampling for Stochastic Petri Nets</b> by Hiroyuki Okamura</b></li>
+							<li>(11:45 - 12:10) <b>On Predicting Software Intensity Using Wavelets and Nonlinear Regression</b> by Kaoru Matsui, Xiao Xiao</b></li>
+							<li>(12:10 - 12:35) <b>Performance Comparison of Bayesian Estimations on the Residual Number of Software Bugs</b> by Yuki Hagiwara, Tadashi Dohi, Hiroyuki Okamura</b></li>
+						</ul>
+					</div>					
+					
 				</div>
 				<div class="tab-pane fade " id="day2" role="tabpanel" aria-labelledby="day2-tab">
 					<p>&nbsp;</p>
@@ -895,6 +916,19 @@
 		</div>
 
 		<hr>
+		<div class="session w3-container w3-padding-large" style="margin-bottom:32px; text-align:justify">
+			<h6>CONFERENCE ROOMS:</h6>
+			<li>Grand Windsor Ballroom (<b>Level 2 Mercure Tower</b>)</li>
+			<li>Olivers + Olivers Boardroom - Located <b>Level 1 Mercure Tower</b> (Directly below King George)</li>
+			<li>Norfolk (<b>Level 2 Mercure Tower</b>)</li>
+			<li>Connaught (<b>Level 2 Mercure Tower</b>)</li>
+			<li>King George Room (<b>Level 2 Mercure Tower</b>)</li>
+			<h6>CATERING</h6>
+			<li>Lunches in KG Bar (<b>Ground Level - Opposite Goldfinch Restaurant</b>)</li>
+			<li>Arrival TC / Morning Tea / Afternoon Tea in <b>Grand Windsor Ballroom</b></li>
+			<li>Dinner in Lincoln & Roosevelt (<b>Level 2 Pullman Tower</b>)</li>
+		</div>
+
 		<div id="venue_map" style='text-align: center;'>
 			<h3 class="page-header">Venue Floor Plan</h3>
 			<select id="pdfSelector">
