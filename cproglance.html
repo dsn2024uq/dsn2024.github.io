@@ -38,6 +38,7 @@
 		--it-color: rgba(124, 188, 189, 0.896);
 		--d23-color: rgba(203, 202, 149, 0.95);
 		--tut-color: rgba(143, 183, 140, 0.95);
+		--cps-color: rgba(191, 142, 153, 0.95);
 		--df-color: rgba(220, 158, 126, 0.75);
 		--social-color: rgba(48, 184, 150, 0.95);
 		--workshop-color: rgba(251, 228, 213, 0.95);
@@ -131,6 +132,10 @@
 
 	.tut-session {
 		background-color: var(--tut-color);
+	}
+
+	.cps-session {
+		background-color: var(--cps-color);
 	}
 
 	.social-session {
@@ -347,6 +352,7 @@
 								<td class="td-3 verdi" rowspan="3" id="ssiv3" data-bs-toggle="tooltip"><b><a href="#VERDI_3">VERDI 3</a></b></td>
 								<td class="td-3 tut-session" rowspan="3" id="axc3" data-bs-toggle="tooltip"><b><a href="#T3">Tutorial 3</a></b>
 								</td>
+								<td class="td-3 cps-session" rowspan="3" id="verdi3" data-bs-toggle="tooltip"><b><a href="#CPS">CPS Security Workshop</a></b>
 								<td class="td-3 tut-session" rowspan="3" id="verdi3" data-bs-toggle="tooltip"><b><a href="#T4">Tutorial 4</a></b>
 								</td>
 							</tr>
@@ -364,8 +370,9 @@
 							<tr>
 								<td class="td-1"><span class="">15:30 - 16:00</span></td>
 								<td class="td-3" id="dcds4" data-bs-toggle="tooltip"></td>
-								<td class="td-3 tut-session" rowspan="3" id="dsml4" data-bs-toggle="tooltip"><b><a href="#T3">Tutorial 3</a></b>
-									<td class="td-3 tut-session" rowspan="3" id="dsml4" data-bs-toggle="tooltip"><b><a href="#T4">Tutorial 4</a></b>
+								<td class="td-3 tut-session" rowspan="3" data-bs-toggle="tooltip"><b><a href="#T3">Tutorial 3</a></b>
+								<td class="td-3 cps-session" rowspan="3" data-bs-toggle="tooltip"><b><a href="#CPS">CPS Security Workshop</a></b>
+								<td class="td-3 tut-session" rowspan="3" data-bs-toggle="tooltip"><b><a href="#T4">Tutorial 4</a></b>
 								</td>
 							</tr>														
 							<tr>
@@ -390,6 +397,7 @@
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--dsml-color);stroke-width:3;stroke:var(--dsml-color)" width="15"></rect></svg> DSML</span>
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--verdi-color);stroke-width:3;stroke:var(--verdi-color)" width="15"></rect></svg> VERDI</span>
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--tut-color);stroke-width:3;stroke:var(--tut-color)" width="15"></rect></svg> Tutorial</span>
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--cps-color);stroke-width:3;stroke:var(--cps-color)" width="15"></rect></svg> CPS Security Workshop</span>
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--dccs-color);stroke-width:3;stroke:var(--dccs-color)" width="15"></rect></svg> DCCS</span>
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--social-color);stroke-width:3;stroke:var(--social-color)" width="15"></rect></svg> Social Events</span>
 						</div>
@@ -458,25 +466,25 @@
 						</ul>
 					</div>
 					
-					<div class="session" id="T_1">
+					<div class="session" id="T1">
 						<h6>Tutorial 1: at <i>King George Room, 9:00 - 12:30, June 24</i></h6>
 						<ul>
 							<li><b>Zero-Knowledge Proofs for Blockchains</b> by Sushmita Ruj</li>
 						</ul>
 					</div>
-					<div class="session" id="T_2">
+					<div class="session" id="T2">
 						<h6>Tutorial 2: at <i>Olivers, 9:00 - 12:30, June 24</i></h6>
 						<ul>
 							<li><b>Evaluating Performance and Dependability of Blockchain Protocols with Diablo</b> by Andrei Lebedev, Vincent Gramoli</li>
 						</ul>
 					</div>
-					<div class="session" id="T_3">
+					<div class="session" id="T3">
 						<h6>Tutorial 3: at <i>King George Room, 13:30 - 17:00, June 24</i></h6>
 						<ul>
 							<li><b>Safe, Secure, and Trustworthy Artificial Intelligence (AI) via Formal Verification of Neural Networks and Autonomous Cyber-Physical Systems (CPS) with NNV</b> by Taylor T. Johnson, Diego Manzanas Lopez, Hoang-Dung Tran</li>
 						</ul>
 					</div>
-					<div class="session" id="T_4">
+					<div class="session" id="T4">
 						<h6>Tutorial 4: at <i>Olivers, 13:30 - 17:00, June 24</i></h6>
 						<ul>
 							<li><b>LLTFI and the Art of Fault Injection</b> by Karthik Pattabiraman, Abraham Chan</b></li>
@@ -722,7 +730,7 @@
 							</tr>			
 							<tr>
 								<td class="td-1"><span class="">19:00 - 22:00</span></td>
-								<td class="td-2 social-session" colspan="4">Banquet (at the hotel)</td>
+								<td class="td-2 social-session" colspan="4">Banquet (at the hotel in Lincoln & Roosevelt (Level 2 Pullman Tower))</td>
 							</tr>																									
 						</tbody>
 					</table>
@@ -1007,7 +1015,7 @@
 			<h6>CATERING</h6>
 			<li>Lunches in KG Bar (<b>Ground Level - Opposite Goldfinch Restaurant</b>)</li>
 			<li>Arrival TC / Morning Tea / Afternoon Tea in <b>Grand Windsor Ballroom</b></li>
-			<li>Dinner in Lincoln & Roosevelt (<b>Level 2 Pullman Tower</b>)</li>
+			<li>Banquet Dinner in Lincoln & Roosevelt (<b>Level 2 Pullman Tower</b>)</li>
 		</div>
 
 		<div id="venue_map" style='text-align: center;'>
