@@ -46,6 +46,8 @@
 		--verdi-color: rgb(195, 161, 117);
 		--dccs-color: darkgray;
 		--poster-color: rgb(240, 193, 163);
+		--tpc-color: rgb(204, 163, 180);
+		--sc-color: rgb(156, 151, 221);
 	}
 	.dsml_1 {
 		background: linear-gradient(to bottom, white 15%, var(--dsml-color) 15%, var(--dsml-color) 85%, white 85%);
@@ -86,6 +88,14 @@
 	.legend p {
     margin-top: 5pt;    /* Removes top margin */
     margin-bottom: 0; /* Removes bottom margin */
+	}
+
+	.TPC{
+		background-color:var(--tpc-color);
+	}
+
+	.SC{
+		background-color:var(--sc-color);
 	}
 
 	.dsml{
@@ -526,7 +536,7 @@
 							</tr>							
 							<tr>
 								<td class="td-1"><span class="">9:00 - 9:30</span></td>
-								<td class="td-2 tdbg" colspan="4">Opening</td>
+								<td class="td-2 tdbg" colspan="4"><b><a href="#opening">Opening</a></b></td>
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">9:30 - 10:00</span></td>
@@ -598,6 +608,11 @@
 						</div>
 					</div>
 					<hr>
+					<div class="session" id="opening">
+						<h6>Opening,<i> 9:00 - 9:30, June 25</i></h6>
+						<p><b>Session Chairs:</b> Domenico Cotroneo (Università di Napoli Federico II) and Dan Kim (The University of Queensland)</p>
+					</div>
+
 					<div class="session" id="keynote1">
 						<h6>Keynote 1,<i> 9:30 - 10:30, June 25</i></h6>
 						<p><b>Session Chair:</b> Julia Lawall (Inria-Paris)</p>
@@ -608,6 +623,7 @@
 
 					<div class="session" id="Best_Paper">
 						<h6>Best Paper Session,<i> 11:00 - 12:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Domenico Cotroneo (Università di Napoli Federico II)</p>
 						<ul>
 							<li><b>On the Correctness of Metadata-based SBOM Generation: A Differential Analysis Approach (PER)</b> by Sheng Yu, Wei Song, Xunchao Hu, Heng Yin</li>
 							<li><b>ZLB: A Blockchain to Tolerate Colluding Majorities</b> by Alejandro Ranchal-Pedrosa, Vincent Gramoli</li>
@@ -616,6 +632,7 @@
 					</div>
 					<div class="session" id="WC_Award">
 						<h6>WC Award,<i> 13:30 - 14:30, June 25</i></h6>
+						<p><b>Session Chair:</b> Domenico Cotroneo (Università di Napoli Federico II)</p>
 						<ul>
 							<li><b>Offensive and defensive approaches for wireless communication protocols security in IoT</b> by Romain Cayre</li>
 						</ul>
@@ -705,7 +722,9 @@
 							</tr>														
 							<tr>
 								<td class="td-1"><span class="">12:30 - 13:00</span></td>
-								<td class="td-2 tdbg" rowspan="2" colspan="4">Lunch</td>
+								<td class="td-2 tdbg" rowspan="2" colspan="2">Lunch</td>
+								<td class="td-2 TPC" rowspan="2" colspan="1"><b>TPC Meeting</b></td>
+								<td class="td-2 tdbg" rowspan="2" colspan="1">Lunch</td>
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">13:00 - 13:30</span></td>
@@ -753,6 +772,7 @@
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--it-color);stroke-width:3;stroke:var(--it-color)" width="15"></rect></svg> Industry</span>
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--d23-color);stroke-width:3;stroke:var(--d23-color)" width="15"></rect></svg> Disrupt</span>
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--poster-color);stroke-width:3;stroke:var(--poster-color)" width="15"></rect></svg> Poster</span>
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--tpc-color);stroke-width:3;stroke:var(--tpc-color)" width="15"></rect></svg> TPC Meeting</span>
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--awards-color);stroke-width:3;stroke:var(--awards-color)" width="15"></rect></svg> Awards</span>
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--social-color);stroke-width:3;stroke:var(--social-color)" width="15"></rect></svg> Social Events</span>
 						</div>
@@ -760,6 +780,7 @@
 					<hr>
 					<div class="session" id="JCL">
 						<h6>Jean-Claude Laprie (JCL) Award<i>, 8:30 - 9:30, June 26</i></h6>
+						<p><b>Session Chair:</b> Marco Vieira (University of North Carolina at Charlotte)</p>
 						<ul>
 							<li><b>A Methodology for Detection and Estimation of Software Aging</b> by Sachin Garg, Aad van Moorsel, Kalyanaraman Vaidyanathan, Kishor S. Trivedi</li>
 							<li><b>Flipping Bits in Memory without Accessing Them: An Experimental Study of DRAM Disturbance Errors</b> by Yoongu Kim, Ross Daly, Jeremie Kim, Chris Fallin, Ji Hye Lee, Donghyuk Lee, Chris Wilkerson, Konrad Lai, Onur Mutlu</li>
@@ -896,7 +917,8 @@
 							</tr>							
 							<tr>
 								<td class="td-1"><span class="">12:30 - 13:00</span></td>
-								<td class="td-2 tdbg" rowspan="2" colspan="5">Lunch</td>
+								<td class="td-2 tdbg" rowspan="2" colspan="3">Lunch</td>
+								<td class="td-2 SC" rowspan="2" colspan="1"><b>SC Meeting</b></td>
 							</tr>
 							<tr>
 								<td class="td-1"><span class="">13:00 - 13:30</span></td>
@@ -933,6 +955,7 @@
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--keynotes-color);stroke-width:3;stroke:var(--keynotes-color)" width="15"></rect></svg> Keynotes</span>
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--rt-color);stroke-width:3;stroke:var(--rt-color)" width="15"></rect></svg> Research</span>
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--it-color);stroke-width:3;stroke:var(--it-color)" width="15"></rect></svg> Industry</span>
+							<span><svg height="15" width="15"><rect height="15" style="fill:var(--sc-color);stroke-width:3;stroke:var(--sc-color)" width="15"></rect></svg> SC Meeting</span>
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--df-color);stroke-width:3;stroke:var(--df-color)" width="15"></rect></svg> Doctoral Forum</span>
 							<span><svg height="15" width="15"><rect height="15" style="fill:var(--social-color);stroke-width:3;stroke:var(--social-color)" width="15"></rect></svg> Social Events</span>
 						</div>
@@ -941,6 +964,7 @@
 
 					<div class="session" id="RS_ToT">
 						<h6>Awards (Rising Star and Test-of-Time)<i>, 9:00 - 9:30, June 27</i></h6>
+						<p><b>Session Chair:</b> Domenico Cotroneo (Università di Napoli Federico II)</p>
 						<ul>
 							<li><b>Pramod Bhatotia</b>, TU Munich, Germany</li>
 							<li><b>Lessons Learned from the Analysis of System Failures at Petascale: The Case of Blue Waters</b> by Catello Di Martino, Zbigniew Kalbarczyk, Ravishankar K. Iyer, Fabio Baccanico, Joseph Fullop, William Kramer</li>
