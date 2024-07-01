@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Conference Photos</title>
     <meta charset="UTF-8">
@@ -9,7 +10,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body, h1, h2, h3, h4, h5, h6 {
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: "Raleway", sans-serif;
         }
 
@@ -18,60 +25,45 @@
             color: rgb(35, 102, 183);
         }
 
-        .slide-frame {
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-        
-        .slideshow-container {
-            position: relative;
-            max-width: 800px;
-            height: 600px;
-            overflow: hidden;
-            border: 2px solid #333;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
         }
 
-        .slides {
-            display: none;
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .photo-frame {
+            width: 100%;
+            padding-top: 74.5%;
+            /* Aspect ratio 1:1 */
+            position: relative;
+            overflow: hidden;
+            background-color: #fff;
+            /* Fallback color */
+            border: 1px solid #ccc;
+        }
+
+        .photo-frame img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
             width: 100%;
             height: 100%;
             object-fit: contain;
-        }
-
-        .active {
-            display: block;
-        }
-
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: auto;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            user-select: none;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .prev {
-            left: 0;
-            border-radius: 0 3px 3px 0;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
+
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
     <!-- Sidebar/menu -->
@@ -79,19 +71,78 @@
         <div w3-include-html="sidebar.html"></div>
     </nav>
 
+    <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
         title="close side menu" id="myOverlay"></div>
 
+    <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:300px">
 
+        <!-- Header -->
         <header id="dsnHeader">
             <div w3-include-html="header.html"></div>
         </header>
-        <div class="w3-container w3-padding-large" style="margin-bottom:32px; text-align:justify">
+        <div class="w3-container slide-frame w3-padding-large" style="margin-bottom:32px; text-align:justify">
 
-            <div class="slideshow-container slide-frame">
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="gallery">
+                <div class="photo-frame"><img src="./images/cphotos/img1.jpg" alt="Photo 1"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img2.jpg" alt="Photo 2"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img3.jpg" alt="Photo 3"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img4.jpg" alt="Photo 4"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img5.jpg" alt="Photo 5"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img6.jpg" alt="Photo 6"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img7.jpg" alt="Photo 7"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img8.jpg" alt="Photo 8"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img9.jpg" alt="Photo 9"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img10.jpg" alt="Photo 10"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img11.jpg" alt="Photo 11"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img12.jpg" alt="Photo 12"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img13.jpg" alt="Photo 13"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img14.jpg" alt="Photo 14"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img15.jpg" alt="Photo 15"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img16.jpg" alt="Photo 16"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img17.jpg" alt="Photo 17"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img18.jpg" alt="Photo 18"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img19.jpg" alt="Photo 19"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img20.jpg" alt="Photo 20"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img21.jpg" alt="Photo 21"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img22.jpg" alt="Photo 22"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img23.jpg" alt="Photo 23"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img24.jpg" alt="Photo 24"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img25.jpg" alt="Photo 25"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img26.jpg" alt="Photo 26"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img27.jpg" alt="Photo 27"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img28.jpg" alt="Photo 28"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img29.jpg" alt="Photo 29"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img30.jpg" alt="Photo 30"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img31.jpg" alt="Photo 31"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img32.jpg" alt="Photo 32"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img33.jpg" alt="Photo 33"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img34.jpg" alt="Photo 34"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img35.jpg" alt="Photo 35"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img36.jpg" alt="Photo 36"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img37.jpg" alt="Photo 37"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img38.jpg" alt="Photo 38"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img39.jpg" alt="Photo 39"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img40.jpg" alt="Photo 40"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img41.jpg" alt="Photo 41"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img42.jpg" alt="Photo 42"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img43.jpg" alt="Photo 43"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img44.jpg" alt="Photo 44"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img45.jpg" alt="Photo 45"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img46.jpg" alt="Photo 46"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img47.jpg" alt="Photo 47"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img48.jpg" alt="Photo 48"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img49.jpg" alt="Photo 49"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img50.jpg" alt="Photo 50"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img51.jpg" alt="Photo 51"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img52.jpg" alt="Photo 52"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img53.jpg" alt="Photo 53"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img54.jpg" alt="Photo 54"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img55.jpg" alt="Photo 55"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img56.jpg" alt="Photo 56"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img57.jpg" alt="Photo 57"></div>
+                <div class="photo-frame"><img src="./images/cphotos/img58.jpg" alt="Photo 58"></div>
             </div>
 
         </div>
@@ -113,51 +164,9 @@
             Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
                 class="w3-hover-opacity">w3.css</a>
         </div>
+
+        <!-- End page content -->
     </div>
-
-    <script>
-        const imageFolder = './images/cphotos';
-        const imageCount = 58; // Update this number based on the actual number of images
-        const slideshowContainer = document.querySelector('.slideshow-container');
-
-        for (let i = 1; i <= imageCount; i++) {
-            const img = document.createElement('img');
-            img.src = `${imageFolder}/img${i}.jpg`;
-            img.classList.add('slides');
-            if (i === 1) img.classList.add('active');
-            slideshowContainer.appendChild(img);
-        }
-
-        let slideIndex = 1;
-
-        function showSlides(n) {
-            let i;
-            const slides = document.getElementsByClassName('slides');
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = 'none';
-            }
-            slides[slideIndex - 1].style.display = 'block';
-        }
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        document.querySelector('.slideshow-container').insertAdjacentHTML('beforeend', `
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        `);
-
-        setInterval(() => {
-            plusSlides(1);
-        }, 6000); // Change slide every 3 seconds
-    </script>
 
     <script>
         // Script to open and close sidebar
@@ -173,22 +182,27 @@
 
         function includeHTML() {
             var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
             z = document.getElementsByTagName("*");
             for (i = 0; i < z.length; i++) {
                 elmnt = z[i];
+                /*search for elements with a certain attribute:*/
                 file = elmnt.getAttribute("w3-include-html");
                 if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
                     xhttp = new XMLHttpRequest();
                     xhttp.onreadystatechange = function () {
                         if (this.readyState == 4) {
                             if (this.status == 200) { elmnt.innerHTML = this.responseText; }
                             if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                            /* Remove the attribute, and call this function once more: */
                             elmnt.removeAttribute("w3-include-html");
                             includeHTML();
                         }
                     }
                     xhttp.open("GET", file, true);
                     xhttp.send();
+                    /* Exit the function: */
                     return;
                 }
             }
@@ -206,4 +220,5 @@
     </script>
 
 </body>
+
 </html>
