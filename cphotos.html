@@ -1,88 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title>Conference Photos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="images/DSN_logo.png" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
 
-<head>
-    <title>Conference Photos</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/DSN_logo.png" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Raleway", sans-serif;
-        }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+    }
 
-        h5 {
-            font-weight: bold;
-            color: rgb(35, 102, 183);
-        }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 20px;
-        }
+    .photo-frame {
+        width: 100%;
+        padding-top: 74.5%;
+        /* Aspect ratio 1:1 */
+        position: relative;
+        overflow: hidden;
+        background-color: #fff;
+        /* Fallback color */
+        border: 1px solid #ccc;
+    }
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-
-        .photo-frame {
-            width: 100%;
-            padding-top: 74.5%;
-            /* Aspect ratio 1:1 */
-            position: relative;
-            overflow: hidden;
-            background-color: #fff;
-            /* Fallback color */
-            border: 1px solid #ccc;
-        }
-
-        .photo-frame img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            transform: translate(-50%, -50%);
-        }
-    </style>
+    .photo-frame img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transform: translate(-50%, -50%);
+    }
+</style>
 </head>
 
-<body class="w3-light-grey w3-content" style="max-width:1600px">
-
-    <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br>
-        <div w3-include-html="sidebar.html"></div>
-    </nav>
-
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
-        title="close side menu" id="myOverlay"></div>
-
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:300px">
-
-        <!-- Header -->
-        <header id="dsnHeader">
-            <div w3-include-html="header.html"></div>
-        </header>
-        <div class="w3-container slide-frame w3-padding-large" style="margin-bottom:32px; text-align:justify">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div w3-include-html="sidebar.html"></div>
+  </nav>
+  
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+  
+    <!-- Header -->
+    <header id="dsnHeader">
+      <div w3-include-html="header.html"></div>
+    </header>
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px; text-align:justify">
 
             <div class="gallery">
                 <div class="photo-frame"><img src="./images/cphotos/img1.jpg" alt="Photo 1"></div>
