@@ -21,17 +21,11 @@
         .slideshow-container {
             position: relative;
             max-width: 800px;
-            height: 600px; /* Ensure this is set */
+            height: 600px;
             overflow: hidden;
             border: 2px solid #333;
         }
 
-        .slide-frame {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-        }
         .slides {
             display: none;
             width: 100%;
@@ -80,7 +74,6 @@
         <div w3-include-html="sidebar.html"></div>
     </nav>
 
-    <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
         title="close side menu" id="myOverlay"></div>
 
@@ -118,8 +111,6 @@
             Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
                 class="w3-hover-opacity">w3.css</a>
         </div>
-
-        <!-- End page content -->
     </div>
 
     <script>
@@ -163,7 +154,7 @@
 
         setInterval(() => {
             plusSlides(1);
-        }, 3000); // Change slide every 3 seconds
+        }, 6000); // Change slide every 3 seconds
     </script>
 
     <script>
